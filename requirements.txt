@@ -1,0 +1,15 @@
+setuptools
+django
+djangorestframework
+markdown
+django-filter
+django-url-filter
+requests
+numpy
+pandas
+django-pandas
+xlrd
+wheel
+psycopg2-binary
+sqlalchemy
+pyyaml

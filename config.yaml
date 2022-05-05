@@ -1,0 +1,34 @@
+spark_master: http://clusterspark-ui-route-devdatascience.devcloud.mprj.mp.br/
+
+data:
+
+  elasticsearch: # webconsole: http://d-dbmongo02.pgj.rj.gov.br:9200/_plugin/head/
+    repositories.enabled: true
+    cluster-name: elastichomol
+    cluster-nodes: h-dbmongo02.pgj.rj.gov.br:9300,h-dbmongo03.pgj.rj.gov.br:9300,h-dbmongo04.pgj.rj.gov.br:9300
+
+  judicialdb:
+    uri: mongodb://p-dbmongo03.pgj.rj.gov.br/mgpe?readPreference=secondaryPreferred
+    user: mgpe
+    password: akyaqz8QLvF4nexoW2
+    
+  mgpexdb:
+    uri: mongodb://h-dbmongo03.pgj.rj.gov.br/mgpex?readPreference=secondaryPreferred
+    user: mgpex
+    password: mgpex_2017
+
+  postgres:
+    sqlalchemy: 'postgresql://gestao:gestao@d-postgres01.pgj.rj.gov.br/gestao'
+    uri: "dbname='gestao' user='gestao' host='d-postgres01.pgj.rj.gov.br' password='gestao'"
+    host: d-postgres01.pgj.rj.gov.br
+    dbname: gestao
+    user: gestao
+    password: gestao
+
+datasource:
+  jndi-name: java:jboss/mgpeconsultaDS
+  url: jdbc:oracle:thin:@exa-scan.pgj.rj.gov.br:1521:corr
+  driver-class-name: oracle.jdbc.driver.OracleDriver
+  username: TJRJ_WEBSERVICE_CON
+  password: TJRJ_WEBSERVICE_CON
+
