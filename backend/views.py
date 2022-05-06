@@ -1,13 +1,13 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-
+from django.utils.translation import gettext_lazy as _
 from django.contrib.auth.models import User, Group
 from rest_framework import viewsets, serializers
 from rest_framework.authentication import SessionAuthentication, BasicAuthentication
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from url_filter.integrations.drf import DjangoFilterBackend
+# from url_filter.integrations.drf import DjangoFilterBackend
 # from urllib3.packages.rfc3986.compat import unicode
 
 from backend.serializers import UserSerializer, GroupSerializer

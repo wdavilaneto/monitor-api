@@ -1,6 +1,8 @@
 from django.urls import path
 
 from . import views
+# from .views import TrelloViewSet
+from .views import TrelloViewSet
 
 urlpatterns = [
     # ex: /polls/
@@ -12,6 +14,7 @@ urlpatterns = [
     # # ex: /polls/5/vote/
     path('bsr/', views.get_bsr),
     path('bsr/<int:id>/', views.get_bsr_by_id),
+    path('trello', TrelloViewSet.as_view())
     # path('all/', views.find_all_project(), name='all_projetos_with'),
     # path('bsr/<int:id>/', views.BoardStatisticsResource.as_view()),
 ]

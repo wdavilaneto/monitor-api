@@ -18,7 +18,7 @@ from django.urls import path, include
 
 from backend.views import UserViewSet, GroupViewSet
 
-from portfolio.views import BoardViewSet, TaskViewSet, ObjectiveViewSet, KeyResultsViewSet, KeyResultValueViewSet
+from portfolio.views import *
 
 from rest_framework import routers
 
