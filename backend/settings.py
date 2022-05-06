@@ -156,3 +156,8 @@ REST_FRAMEWORK = {
 # 'DEFAULT_METADATA_CLASS': 'rest_framework.metadata.SimpleMetadata',
 # 'DEFAULT_FILTER_BACKENDS': ('rest_framework_filters.backends.RestFrameworkFilterBackend',),
 # 'PAGINATE_BY': 10,  # Default to 10
+
+API_KEY = os.environ.get('API_KEY')
+API_SECRET = os.environ.get('API_SECRET')
+TOKEN = os.environ.get('TOKEN')
+TOKEN_SECRET = os.environ.get('TOKEN_SECRET')

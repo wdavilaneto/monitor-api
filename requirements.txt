@@ -5,12 +5,13 @@ django-url-filter==0.3.15
 djangorestframework==3.13.1
 markdown==3.3.7
 requests
-numpy
-pandas
+py-trello
+numpy~=1.22.3
+pandas~=1.4.2
 django-pandas
 xlrd
 wheel
 psycopg2-binary
-sqlalchemy
-pyyaml
+sqlalchemy~=1.4.36
+pyyaml~=6.0
 pip
