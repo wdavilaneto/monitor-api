@@ -57,6 +57,7 @@ __pycache__/
 *.py[cod]
 package-lock.json
 .pyc
+.env
 
 # C extensions
 *.so
